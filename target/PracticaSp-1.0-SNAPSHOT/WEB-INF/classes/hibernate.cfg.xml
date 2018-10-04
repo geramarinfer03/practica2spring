@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/elearning3</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.example.sp1.model.Colaboracion"/>
+    <mapping class="com.example.sp1.model.Curso"/>
+    <mapping class="com.example.sp1.model.Entrega"/>
+    <mapping class="com.example.sp1.model.Formulario"/>
+    <mapping class="com.example.sp1.model.Matricula"/>
+    <mapping class="com.example.sp1.model.Recurso"/>
+    <mapping class="com.example.sp1.model.Rol"/>
+    <mapping class="com.example.sp1.model.Semana"/>
+    <mapping class="com.example.sp1.model.Tarea"/>
+    <mapping class="com.example.sp1.model.TipoColaboracion"/>
+    <mapping class="com.example.sp1.model.TipoRecurso"/>
+    <mapping class="com.example.sp1.model.Usuario"/>
+
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
